@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prebuild:spec": "mkdir -p build/spec/",
+    "build:spec": "npx --no-install ecmarkup spec.ecmarkup.html build/spec/index.html --assets inline",
+    "build": "npm run build:spec"
   },
   "repository": {
     "type": "git",
@@ -27,6 +30,7 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "ecmarkup": "^9.3.0",
     "husky": "^7.0.2"
   }
 }
