@@ -1,0 +1,32 @@
+{
+  "name": "array.prototype.reject",
+  "version": "1.0.0",
+  "description": "Array.prototype.reject polyfill to select elements that do not pass the predictor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davy-ext-shims/Array.prototype.reject.git"
+  },
+  "keywords": [
+    "Array.prototype.reject",
+    "array",
+    "reject",
+    "shim",
+    "polyfill"
+  ],
+  "author": "Davy <me@davy.tw>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davy-ext-shims/Array.prototype.reject/issues"
+  },
+  "homepage": "https://github.com/davy-ext-shims/Array.prototype.reject#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "husky": "^7.0.2"
+  }
+}
