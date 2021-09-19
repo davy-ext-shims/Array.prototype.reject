@@ -1,17 +1,17 @@
 {
-  "name": "array.prototype.reject",
-  "version": "1.0.0",
+  "name": "@davy-ext-shims/array.prototype.reject",
+  "version": "1.0.1",
   "description": "Array.prototype.reject polyfill to select elements that do not pass the predictor",
   "main": "index.js",
   "module": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
+    "prepare": "test -d .git && husky install || true",
     "prebuild:spec": "mkdir -p build/spec/",
     "build:spec": "npx --no-install ecmarkup spec.ecmarkup.html build/spec/index.html --assets inline",
     "prebuild:source": "mkdir -p build/",
     "build:source": "npx --no-install tsc-multi",
-    "postbuild:source": "cp package.json build/package.json",
+    "postbuild:source": "cp package.json README.md build/",
     "build": "npm run build:spec && npm run build:source"
   },
   "repository": {
